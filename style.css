@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f7f5;
+    text-align: center;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left a, .right a {
+    text-decoration: none;
+    color: black;
+}
+
+#clock {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
